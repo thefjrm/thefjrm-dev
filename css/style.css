@@ -9,7 +9,7 @@
   --secondaryText: #4b5156;
   --borderColor: #c1c1c1;
   --themeDotBorder: #24292e;
-  --previewBg: rgb(251, 249, 243, 0.8);
+  --previewBg: rgb(251, 249, 243, 0.6);
   --buttonColor: black;
 }
 
@@ -17,6 +17,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body * {
@@ -29,15 +30,16 @@ h3,
 h4,
 h5,
 h6,
-strong {
+strong,
+a {
   color: var(--mainText);
   font-family: "Russo One", sans-serif;
   font-weight: 500;
+  text-decoration: none;
 }
 
-a {
-  color: #17a2b8;
-  text-decoration: none;
+a:hover {
+  text-decoration: underline;
 }
 
 ul {
@@ -283,6 +285,7 @@ textarea {
 
 .social-links {
   align-content: center;
+  color: var(--mainText);
   display: grid;
   text-align: center;
 }
@@ -305,13 +308,18 @@ textarea {
   padding: 15px;
 }
 
+.post-preview a {
+  color: var(--mainText);
+  font-family: "Russo One", sans-serif;
+}
+
 .post-title {
   color: black;
   margin: 0;
 }
 
 .post-intro {
-  color: #4b5156;
+  color: var(--themeDotBorder);
   font-size: 16px;
 }
 

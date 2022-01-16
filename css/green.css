@@ -9,6 +9,10 @@
   --secondaryText: #eee;
   --borderColor: #161914;
   --themeDotBorder: #fff;
-  --previewBg: rgb(81, 90, 72, 0.8);
+  --previewBg: #669966;
   --buttonColor: #669966;
+}
+
+.post-preview {
+  background-color: #669966;
 }
