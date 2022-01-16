@@ -38,11 +38,16 @@ a {
   text-decoration: none;
 }
 
+a {
+  padding: 5px;
+}
+
 a:hover {
   text-decoration: underline;
 }
 
 ul {
+  color: #ffffff;
   list-style: none;
 }
 
@@ -231,6 +236,7 @@ textarea {
 #preview {
   background-color: var(--previewBg);
   border: 1.5px solid #17a2b8;
+  color: white;
   padding: 15px;
   position: relative;
   width: 300px;
@@ -327,9 +333,14 @@ textarea {
   background-color: var(--buttonColor);
   border: none;
   color: white;
+  cursor: pointer;
   margin-top: 10px;
   padding: 10px 0;
   width: 100%;
+}
+
+#submit-btn:hover {
+  transform: scale(1.03);
 }
 
 #contact-form {
